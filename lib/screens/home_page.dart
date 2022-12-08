@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:google_ml_kit/google_ml_kit.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -15,6 +16,7 @@ class _HomePageState extends State<HomePage> {
   bool textScanning = false;
   XFile? imageFile;
   String scannedText = "";
+  final FlutterTts flutterTts = FlutterTts();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -128,6 +130,7 @@ class _HomePageState extends State<HomePage> {
                 Center(
                   child: Container(
                     decoration: BoxDecoration(
+                      border: Border.all(),
                       borderRadius: BorderRadius.circular(12),
                       color: Colors.grey[300],
                     ),
@@ -141,7 +144,49 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
-                )
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(8, 15, 8, 10),
+                  child: Container(
+                    width: 200,
+                    height: 60,
+                    margin: const EdgeInsets.symmetric(horizontal: 5),
+                    padding: const EdgeInsets.only(top: 10),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.white,
+                        onPrimary: Colors.grey,
+                        shadowColor: Colors.grey[400],
+                        elevation: 10,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8.0)),
+                      ),
+                      onPressed: () {
+                        speak(scannedText);
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.symmetric(
+                            vertical: 5, horizontal: 5),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const Icon(
+                              Icons.volume_up_outlined,
+                              color: Colors.grey,
+                              size: 30,
+                            ),
+                            Text(
+                              "Play",
+                              style: TextStyle(
+                                  fontSize: 13, color: Colors.grey[600]),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -180,5 +225,11 @@ class _HomePageState extends State<HomePage> {
     }
     textScanning = false;
     setState(() {});
+  }
+
+  speak(String text) async {
+    await flutterTts.setLanguage("en-US");
+    await flutterTts.setPitch(1);
+    await flutterTts.speak(text);
   }
 }
