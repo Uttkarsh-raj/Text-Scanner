@@ -148,17 +148,18 @@ Tap in the "Play" button to hear the extracted text.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!--ROADMAP-->
+<!-- ROADMAP -->
 
 ## Roadmap
 
--[X] Add Changelog
--[X] Add back to top links
--[X] Add Additional Templates w/ Examples
--[] Add "coponents" document to easily copy & paste sections of the readme
--[] Multi-language Support
-  -[] Chinese
-  -[] Spanish
+- [x] Add Changelog
+- [x] Add back to top links
+- [x] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+  - [ ] Chinese
+  - [ ] Spanish
+
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
