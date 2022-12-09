@@ -104,29 +104,45 @@ flutter pub get
 
 <!--USAGE EXAMPLES-->
 
-##Usage
+## Usage
 
 The application opens to this screen. Select the image either from your gallery or capture using the camera.
+
+
 1.Using gallery:
 ![320429d2-9bc6-4a57-84b6-0c0bc64f7fdb](https://user-images.githubusercontent.com/106571927/206705038-9d99cd45-5395-41fa-a8e7-c295d2f03daa.jpg)
+
+
 
 The selected image gets displayed in place of the center container:
 ![70a58096-7c1b-41c0-bfd9-80fa6ec3e6f3](https://user-images.githubusercontent.com/106571927/206705118-6065fa1d-bce0-49aa-8f5e-de086716f5c4.jpg)
 
+
+
 The extracted text is viewed in the bottom conatainer the play button converts the text to speech:
 ![f998bf31-2983-4413-a924-de5afff4eaba](https://user-images.githubusercontent.com/106571927/206705129-88098c67-85d7-4fe4-84e5-45bdcb055bc4.jpg)
+
+
 
 2.Using Camera:
 ![aeafe21d-d67f-426b-89e6-83fec8bbe90b](https://user-images.githubusercontent.com/106571927/206706449-7deaead9-79a8-4ac5-8a3f-f9de12093c1a.jpg)
 
+
+
 Wait till the image gets loaded:
 ![cae5ce3e-19cc-4573-9817-bf7da0b8d3bc](https://user-images.githubusercontent.com/106571927/206706658-09c890b0-ff3a-4de1-9198-f41989474c04.jpg)
+
+
 
 Image loaded sucessfully:
 ![f655fb22-ab4d-4b06-960d-ff496d9b2afc](https://user-images.githubusercontent.com/106571927/206706870-dd45bff2-782a-41dc-a202-1396968b4e91.jpg)
 
+
+
 The Google ML Kit displays the extracted text in the display container:
 ![fe05426a-8d81-42b0-89f6-306b81c9b3a8](https://user-images.githubusercontent.com/106571927/206707081-90308cec-fcad-4624-9828-8d7df74abddb.jpg)
+
+
 
 Tap in the "Play" button to hear the extracted text.
 
