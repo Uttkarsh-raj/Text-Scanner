@@ -31,11 +31,7 @@ A new Flutter project repository for an application that can extract text from a
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
   </details>
-  <!--About the Project-->
-  
-  ## About The Project
-  
-  
+
   There are many great README templates available on GitHub;however, I didn't find one that really suited my needs so I created this one. I wanted to create a README template which satisfies the project.
   
 Here's why:
@@ -45,6 +41,15 @@ Here's why:
 - You should implement DRY principles to the rest of your life :smile:
 
 Of course, no one template will serve all projects since your needs may be different. So i'll be  adding more in the near future.You may also suggest changes by forking this repo and creating a pull request or opening issue. Thanks to all the people have contributed to expanding this template!
+
+<!--About the Project-->
+  
+## About The Project
+
+ScanIt is an application made in flutter that uses GOOGLEs ML KIT sdk to detect text from a picture which is selected by a image_picker package available at pub dev.
+The scanned text is converted to speech using the tts package on pub dev.
+  
+  
 
 ### Built With
 
@@ -184,7 +189,6 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
